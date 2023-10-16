@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ingrith - Vida Personal</title>
+    <link rel="stylesheet" href="index1.css">
+    <link rel="icon" type="image/png" href="IMG/index.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .ampliable {
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+    
+        .ampliable:hover {
+            transform: scale(1.2);
+        }
+    </style>
+    
+    
+    
+    
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <p class="logo">Sobre mi</p>
+            <nav class="tabs">
+                <a href="index.html">Inicio</a>
+                <a href="#Nosotros"> Mi Familia</a>
+                <a href="#Vosotros">Mis Mascotas</a>
+                <a href="#VideoPasatiempo">Mis pasatiempos</a>
+            </nav>
+        </div>
+    </header>
+    <section id="Nosotros">
+        <div class="contenedor">
+            <div class="texto">
+                <h2><span class="color-acento">Mi Familia</span></h2>
+                <p>"La familia es donde comienza la vida y el amor nunca termina. Nuestra familia es como las ramas de un árbol, todos crecemos en diferentes direcciones, 
+                    pero nuestras raíces siempre siguen siendo las mismas. 
+                    En cada paso de mi vida, la fortaleza de la familia me ha sostenido."<br>
+                </p>
+            </div>
+            <div class="img-contenedor"></div>
+        </div>
+    </section>
+    <section id="Vosotros">
+        <div class="contenedor">
+            <h2><span class="color-acento">Mis mascotas</span></h2>
+            <p>Cada uno de ellos hace parte de mi familia, son seres que me llenan de mucha felicidad.
+                "Los animales son sensibles, inteligentes, divertidos y entretenidos. Debemos cuidarnos al
+                igual que hacemos con los niños."-Michaell<br>
+                Fuente:propia
+            </p>
+            <br>
+            <div class="image-container">
+                <img src="Masccota1.jpg" alt="Image 1">
+                <img src="Mascota2.jpg" alt="Image 2">
+                <img src="Mascota3.jpg" alt="Image 3">
+                <img src="Mascota4.jpg" alt="Image 4">
+                <img src="Mascota5.jpg" alt="Image 5">
+                <img src="index4.jpg" alt="Image 6">
+            </div>
+        </div>
+    </section><br>
+
+    <!-- Video de Multimedia en un Cuadro Pequeño -->
+    <section id="VideoPasatiempo">
+        <div class="contenedor">
+            <h2><span class="color-acento">Mis Pasatiempos</span></h2>
+            <p>En mi tiempo libre, me gusta disfrutar de varios pasatiempos, como jugar futbol, bailar en grupos de danza participando 
+                en los carnavales de mi municipio,
+                compartir con mis amigos y conocer lugares nuevos con personas especiales.</p><br>
+            <div class="video-container">
+                <div class="image-container">
+                    <img src="img1.jpg" alt="Image 1">
+                    <img src="img7.jpg" alt="Image 2">
+                    <img src="img3.jpg" alt="Image 3">
+                    <img src="img4.jpg" alt="Image 4">
+                    <img src="img5.jpg" alt="Image 5">
+                    <img src="img6.jpg" alt="Image 6">
+                </div><br>
+                <div class="image-container">
+                    <img src="pasatiempo.jpg" alt="Image 6">
+                    <img src="compartir.jpg" alt="Image 2">
+                    <img src="familia.jpg" alt="Image 3">
+                    <img src="lugar.jpg" alt="Image 4">
+                    <img src="familia1.jpg" alt="Image 4">
+                    <img src="lago.jpg" alt="Image 4">
+
+                </div><br>
+                <p>Acontinuacion dos presentaciones de los dos ultimos años en mi pueblo.</p>
+                <video controls width="320" height="240">  
+                    <source src="./Videos/video.mp4" type="video/mp4"><br>
+                </video>
+                <video controls width="320" height="240">  
+                    <source src="./Videos/video1.mp4" type="video/mp4"><br>
+                </video>
+            </div>
+        </div>
+        <a href="#">Inicio</a>
+    </section>
+
+    <!-- Para redes sociales -->
+    <div class="footer-contact">
+        <h3>Redes Sociales:</h3>
+        <div class="social-link">
+            <a href="https://www.facebook.com/profile.php?id=100067652078989" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/gallardoingrith/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/qr/DJFWY65VYCPUH1"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const imagenes = document.querySelectorAll(".image-container img");
+    
+            imagenes.forEach(function (imagen) {
+                imagen.classList.add("ampliable");
+                imagen.addEventListener("click", function () {
+                    imagen.classList.toggle("ampliado");
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>
+
